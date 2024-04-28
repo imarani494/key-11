@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./animation.css" />
+    <script
+      src="https://kit.fontawesome.com/7ffabac89d.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        padding: 0px;
+        margin: opx;
+        box-sizing: border-box;
+      }
+      @keyframes a1 {
+        100% {
+          transform: scale(0.5) rotate(360deg);
+        }
+      }
+
+      #box {
+        width: 30vw;
+        height: 30vw;
+        position: relative;
+        /* border: 1px solid black;  */
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: a1 4s infinite;
+      }
+      #box > div {
+        height: 4vw;
+        width: 4vw;
+        border-radius: 50%;
+        background-color: #fcd15b;
+        position: absolute;
+        left: 44.5%;
+        top: 44.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+      }
+      #box > div:nth-of-type(1) {
+        transform: translate(14.25vw);
+      }
+      #box > div:nth-of-type(2) {
+        transform: translate(-14.95vw);
+      }
+      #box > div:nth-of-type(3) {
+        transform: translateY(-14.95vw);
+      }
+      #box > div:nth-of-type(4) {
+        transform: translateY(14.25vw);
+      }
+      #box > div:nth-of-type(5) {
+        transform: translate(10vw, 10vw);
+      }
+      #box > div:nth-of-type(6) {
+        transform: translate(-10vw, 10vw);
+      }
+      #box > div:nth-of-type(7) {
+        transform: translate(11vw, -10vw);
+      }
+      #box > div:nth-of-type(8) {
+        transform: translate(-11.5vw, -10vw);
+      }
+      .left_box {
+        width: 40vw;
+        height: 30vw;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .left_box > h1 {
+        animation: b 5s infinite;
+        /* transition: linear 2s; */
+      }
+      .section {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 100px 100px 100px 0px;
+        background-color: #f4bd24;
+        border: 1px solid black;
+      }
+      .right_box {
+        width: 60vw;
+        height: 30vw;
+      }
+      @keyframes b {
+        0% {
+          transform: translate(-30vw);
+          color: white;
+        }
+
+        100% {
+          transform: translate(28vw);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <div class="left_box">
+        <h1>Pay Bills Instatntly</h1>
+      </div>
+      <div class="right_box">
+        <div id="box">
+          <div><i class="fa-solid fa-phone" style="color: #292929"></i></div>
+          <div><i class="fa-solid fa-house" style="color: #161717"></i></div>
+          <div>
+            <i
+              class="fa-brands fa-square-instagram fa-rotate-270"
+              style="color: #0d0d0d"
+            ></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-facebook" style="color: #0a0a0a"></i>
+          </div>
+          <div><i class="fa-solid fa-camera" style="color: #161717"></i></div>
+          <div>
+            <i class="fa-regular fa-lightbulb" style="color: #212121"></i>
+          </div>
+          <div><i class="fa-brands fa-youtube" style="color: #19191a"></i></div>
+          <div><i class="fa-solid fa-laptop" style="color: #1e1e1f"></i></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
